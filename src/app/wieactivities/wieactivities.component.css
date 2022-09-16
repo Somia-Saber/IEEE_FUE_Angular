@@ -1,0 +1,69 @@
+
+
+
+#bg-videoWie {
+    min-width: 80%;
+    min-height: 20vh;
+    max-width: 100%;
+    max-height: 50vh;
+    object-fit: cover;
+    z-index: -1;
+   
+    /* padding-left: 25em;     */
+/* padding-right: 15em;  */
+margin-bottom: 2em; 
+    
+}
+
+.d-blockWie{
+    width: 100%;
+    height:400px ;
+padding-left: 15em;    
+padding-right: 15em; 
+margin-bottom: 2em; 
+object-fit: cover;
+}
+
+#bg-video::-webkit-media-controls {
+    display: none !important;
+}
+
+@media screen and (max-width: 1024px){
+    .d-blockWie{
+        width: 100%;
+        height:350px ;
+    padding-left: 10em;    
+    padding-right: 10em; 
+    margin-bottom: 2em; 
+    object-fit: cover;
+    }
+    
+   
+    
+}
+@media screen and (max-width: 700px){
+    .d-blockWie{
+        width: 100%;
+        height:250px ;
+    padding-left: 5em;    
+    padding-right:5em; 
+    margin-bottom: 2em; 
+    object-fit: cover;
+    }
+    
+   
+    
+}
+@media screen and (max-width: 430px){
+    .d-blockWie{
+        width: 100%;
+        height:160px ;
+    padding-left: 3em;    
+    padding-right: 3em; 
+    /* margin-bottom: 2em;  */
+    object-fit: cover;
+    }
+    
+   
+    
+}

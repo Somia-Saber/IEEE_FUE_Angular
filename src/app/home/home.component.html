@@ -1,0 +1,80 @@
+
+<!-- ***** Main Banner Area Start ***** -->
+ <section class="section main-banner" id="top" data-section="section1">
+    <video autoplay muted loop id="bg-video">
+        <source src="assets/images/course-video.mp4" type="video/mp4" />
+    </video>
+
+    <div class="video-overlay header-text">
+        <div class="caption">
+          <h3 class="homeText">Seeking for professional development <br> and education activities</h3>
+            <div class="main-button">
+                <div class="scroll-to-section" ><a routerLink="/joinus" >Join Us</a></div>
+            </div>
+        </div>
+    </div>
+</section> 
+<!-- ***** Main Banner Area End ***** -->
+
+
+ <section class="features">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-12" >
+        <div class="features-post" (mouseover)="showpic1(true)" (mouseleave)="showpic1(false)">
+          <div class="features-content" >
+            <div class="content-show">
+              <h4  ><i class="uil uil-shield"></i>Brief on our branch</h4>
+           </div>
+            <section *ngIf="show1" >
+              <p >IEEE FUE branch is located in Cairo, Egypt. <br>It was first formed in 2019 by its first president Engineer....</p>
+              <p class="hidden-sm">IEEE FUE branch is located in Cairo, Egypt. <br>It was first formed in 2019 by its first president Engineer....</p>
+                  <div class="scroll-to-section"><a  routerLink="/aboutus">More Info.</a></div>
+          </section>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12">
+        <div class="features-post second-features" (mouseover)="showpic2(true)" (mouseleave)="showpic2(false)">
+          <div class="features-content">
+            <div class="content-show"  >
+              <h4><i class="fa fa-graduation-cap" ></i>Committees</h4>
+            </div>
+            <section *ngIf="show2" >
+              <p >Responsible for advancing the building of global technologies, understanding how computing, engineering, and technology benefit humanity,
+                 which promote the visibility of engineering, computing, and technology.</p>
+              <p class="hidden-sm">Responsible for advancing the building of global technologies, understanding how computing, engineering, and technology benefit humanity,
+                which promote the visibility of engineering, computing, and technology.</p>
+              <div class="scroll-to-section"><a  routerLink="/Committees">Details</a></div>
+          </section>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12">
+        <div class="features-post third-features" (mouseover)="showpic3(true)" (mouseleave)="showpic3(false)">
+          <div class="features-content">
+            <div class="content-show" >
+              <h4><i class="uil uil-clipboard-alt"></i>Board members</h4>
+            </div>
+            <section *ngIf="show3">
+              <p>Members of ieee focuses on increasing progress, knowledge, new technologies, development and utilize skills for further work.</p>
+              <p class="hidden-sm">Members of ieee focuses on increasing progress, knowledge, new technologies, development and utilize skills for further work.</p>
+              <div class="scroll-to-section"><a  routerLink="/boardus">More Info</a></div>
+          </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
+
+
+<!-- <button  class="btn" (mouseover)="showpic(true)" (mouseout)="showpic(false)"> Hover</button>
+<div  *ngIf="show" id="jj" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam suscipit veniam facilis tempore nemo sunt soluta incidunt quia architecto maxime illo, totam, praesentium magnam reiciendis, atque impedit! Nesciunt, nostrum quam.
+Tenetur deleniti in, repellendus assumenda illo dignissimos officia. Accusantium modi nobis, eligendi repudiandae itaque nulla totam aut veniam. Consequuntur, nesciunt maxime repellendus debitis illum incidunt! Quod labore in ab rem!
+Natus ad doloribus porro impedit perspiciatis, necessitatibus amet unde, eaque laboriosam aperiam ipsam! Corrupti, nemo hic! Incidunt harum magni veritatis. Quasi dolor vel corrupti illum vitae odit ea, error iste?
+Porro, mollitia adipisci odit aliquid iste, minus consequuntur quibusdam atque voluptatum dolorem repellendus rem provident accusamus recusandae reiciendis cupiditate totam quasi. Dolores molestias ducimus eveniet est voluptatem neque eum mollitia!
+Ratione illum voluptatum necessitatibus excepturi iusto dolores quibusdam earum, esse libero labore sit quia velit? Reprehenderit quae labore veritatis exercitationem! Ut, amet laborum eius fugiat rerum ab! Ea, laudantium aliquam.
+Eum, id ab iste odio praesentium cupiditate tenetur optio illum voluptatem perspiciatis modi explicabo delectus quas sit est, reprehenderit mollitia, at laboriosam ex fuga? Culpa totam aut voluptatem suscipit fugit!
+Hic a animi minus cupiditate voluptatibus nemo, natus aut quaerat amet omnis sint. Eveniet, repellat. Hic provident architecto dicta. Quae blanditiis non vel impedit mollitia nemo, eius repellat quidem sint.</div> -->
+<router-outlet></router-outlet>

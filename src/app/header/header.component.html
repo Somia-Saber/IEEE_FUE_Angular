@@ -1,0 +1,48 @@
+
+  <!--header-->
+  <header class="main-header clearfix" role="header" >
+    <div class="upper_nav_color"> &nbsp;
+      <a href="https://www.ieee.org/" >IEEE.org | </a>
+      <a href="https://ieeexplore.ieee.org/Xplore/home.jsp" > IEEE Xplore |  </a>
+      <a  href="https://standards.ieee.org/" > IEEE SA | </a>
+      <a   href="https://spectrum.ieee.org/" > IEEE Spectrum |  </a>
+      <a  href="https://www.ieee.org/sitemap.html" > More sites</a>
+  
+      <div  style="float: right; font-size: larger; ">
+        
+        <a routerLink="signup">Sign up</a>
+        &nbsp; &nbsp;
+        <a routerLink="login">Log in</a>
+        &nbsp;
+      </div>
+      
+    </div>
+    <div class="logo">
+      <img src="../assets/images/IEEEFUE.png" alt="fueieee">
+      
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a routerLink="section1" >Home</a></li>
+        <li ><a routerLink="aboutus" >About Us</a> </li>
+        <li><a routerLink="Committees">Committees</a></li>
+        <!-- <li><a href="#section5">Video</a></li> -->
+        <li><a routerLink="events" >Events</a></li>
+        <li class="has-submenu"><a href="#">WIE</a>
+          <ul class="sub-menu">
+            <li><a routerLink="/Whoarewe">Who are we?</a></li>
+            <li><a routerLink="/wieactivities">activities</a></li>
+            <li><a routerLink="/wiemember">WIE Members</a></li>
+          </ul>
+        </li>
+        <li><a routerLink="contactus">Contact us</a></li>
+       
+        <li><button class="toggle"class="btn btn-outline-light" (click)="switchtheme()">
+          {{theme === 'light-theme'  ? "switch to dark " : "switch to light" }}
+        </button> </li>
+      </ul>
+
+    </nav>
+  </header>
+  <router-outlet></router-outlet>
